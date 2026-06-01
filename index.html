@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#164F1A" />
-    <meta name="description" content="haydha — a household budget app for the family." />
+    <meta name="description" content="haydha — a household budget app for Maldivian families. Track income, expenses, bills, and savings together. Free, no ads, MVR-native." />
 
     <!-- 1. Instant browser-level redirect (works even with JS disabled). -->
     <meta http-equiv="refresh" content="0; url=https://www.haydha.com/" />
 
     <!-- 2. Canonical so search engines fold haydha.com into www.haydha.com. -->
     <link rel="canonical" href="https://www.haydha.com/" />
+    <!-- noindex on the redirect itself — we want www to rank, not this stub. -->
+    <meta name="robots" content="noindex,follow" />
 
-    <title>haydha</title>
+    <title>haydha — household budget app for Maldivian families</title>
+
+    <!-- OG tags so social previews on the apex don't show the old
+         "coming soon" body either. Matches the canonical www site. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="haydha" />
+    <meta property="og:url" content="https://www.haydha.com/" />
+    <meta property="og:title" content="haydha — household budget for the family" />
+    <meta property="og:description" content="Track income, expenses, bills, and savings goals with your household. Free, no ads, made for families in the Maldives." />
+    <meta property="og:image" content="https://www.haydha.com/icon-512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
 
     <!-- 3. JS replace() as a safety net + faster than meta-refresh in some browsers.
          Use replace() not href= so the user's back-button doesn't loop them back here. -->
